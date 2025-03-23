@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom styles here to override Bootstrap defaults and match the image */
+body {
+            font-family: sans-serif;
+        }
+
+.navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+.navbar-brand img {
+            height: 100px; /* Adjust the logo height as needed */
+        }
+
+
+/* Main Content Section */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Product Grid Section */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 15px 15px 10px;
+    color: #333;
+}
+
+.product-price {
+    font-size: 1.1em;
+    color: #000;
+    font-weight: bold;
+    margin: 0 15px 10px;
+}
+
+.product-description {
+    font-size: 0.9em;
+    color: #666;
+    margin: 0 15px 15px;
+}
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Example styling for larger screens, you can adjust as needed */
+@media (min-width: 768px) {
+    footer .footer-links {
+        justify-content: center; /* Keep links centered on larger screens */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo/Grocery_logo.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Section -->
+    <main>
+        <!-- Product Grid -->
+        <section class="product-grid">
+            <!-- Product Cards -->
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 1">
+                    <h3>Product 1</h3>
+                    <p class="product-price">$99.99</p>
+                    <p class="product-description">A brief description of Product 1.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 2">
+                    <h3>Product 2</h3>
+                    <p class="product-price">$129.99</p>
+                    <p class="product-description">A brief description of Product 2.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 3">
+                    <h3>Product 3</h3>
+                    <p class="product-price">$79.99</p>
+                    <p class="product-description">A brief description of Product 3.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 4">
+                    <h3>Product 4</h3>
+                    <p class="product-price">$149.99</p>
+                    <p class="product-description">A brief description of Product 4.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 5">
+                    <h3>Product 5</h3>
+                    <p class="product-price">$89.99</p>
+                    <p class="product-description">A brief description of Product 5.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 6">
+                    <h3>Product 6</h3>
+                    <p class="product-price">$199.99</p>
+                    <p class="product-description">A brief description of Product 6.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 7">
+                    <h3>Product 7</h3>
+                    <p class="product-price">$59.99</p>
+                    <p class="product-description">A brief description of Product 7.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 8">
+                    <h3>Product 8</h3>
+                    <p class="product-price">$109.99</p>
+                    <p class="product-description">A brief description of Product 8.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 9">
+                    <h3>Product 9</h3>
+                    <p class="product-price">$139.99</p>
+                    <p class="product-description">A brief description of Product 9.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 10">
+                    <h3>Product 10</h3>
+                    <p class="product-price">$69.99</p>
+                    <p class="product-description">A brief description of Product 10.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 11">
+                    <h3>Product 11</h3>
+                    <p class="product-price">$179.99</p>
+                    <p class="product-description">A brief description of Product 11.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 12">
+                    <h3>Product 12</h3>
+                    <p class="product-price">$49.99</p>
+                    <p class="product-description">A brief description of Product 12.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 13">
+                    <h3>Product 13</h3>
+                    <p class="product-price">$119.99</p>
+                    <p class="product-description">A brief description of Product 13.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 14">
+                    <h3>Product 14</h3>
+                    <p class="product-price">$89.99</p>
+                    <p class="product-description">A brief description of Product 14.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 15">
+                    <h3>Product 15</h3>
+                    <p class="product-price">$159.99</p>
+                    <p class="product-description">A brief description of Product 15.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 16">
+                    <h3>Product 16</h3>
+                    <p class="product-price">$99.99</p>
+                    <p class="product-description">A brief description of Product 16.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 17">
+                    <h3>Product 17</h3>
+                    <p class="product-price">$79.99</p>
+                    <p class="product-description">A brief description of Product 17.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 18">
+                    <h3>Product 18</h3>
+                    <p class="product-price">$149.99</p>
+                    <p class="product-description">A brief description of Product 18.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 19">
+                    <h3>Product 19</h3>
+                    <p class="product-price">$69.99</p>
+                    <p class="product-description">A brief description of Product 19.</p>
+                </a>
+            </div>
+
+            <div class="product-card">
+                <a href="product-details.html">
+                    <img src="https://via.placeholder.com/300" alt="Product 20">
+                    <h3>Product 20</h3>
+                    <p class="product-price">$199.99</p>
+                    <p class="product-description">A brief description of Product 20.</p>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-links">
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+                <a href="/privacy">Privacy Policy</a>
+                <a href="/terms">Terms of Service</a>
+                <a href="/faq">FAQ</a>
+                <a href="/blog">Blog</a>
+            </div>
+                <div class="copyright">
+                  &copy; 2024 My Website
+                </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

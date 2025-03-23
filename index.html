@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Website</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Add your custom styles here to override Bootstrap defaults and match the image */
+        body {
+            font-family: sans-serif;
+        }
+
+        .navbar {
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            height: 100px; /* Adjust the logo height as needed */
+        }
+
+        .hero {
+            background-image: url('Home-1.jpg');
+            background-size: cover;
+            background-position: center;
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: #070808;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .product-section {
+            padding: 30px 0;
+        }
+
+        .product-card {
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            overflow: hidden; /* Ensure image doesn't overflow */
+        }
+
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            transition: transform 0.3s ease; /* Add a smooth hover effect */
+        }
+
+        .product-card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* .footer {
+            background-color: #343a40;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        } */
+
+footer {
+  background-color: #f0f0f0;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Allows links to wrap on smaller screens */
+  margin-bottom: 10px;
+}
+
+footer .footer-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #333;
+}
+
+footer .footer-links a:hover {
+  text-decoration: underline;
+}
+
+footer .copyright {
+  font-size: 0.8em;
+  color: #777;
+}
+
+/* Example styling for larger screens, you can adjust as needed */
+@media (min-width: 768px) {
+    footer .footer-links {
+        justify-content: center; /* Keep links centered on larger screens */
+    }
+}
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="Logo/Grocery_logo.jpg" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h1>Welcome to Our Grocery Store</h1>
+                    <p>Discover a wide selection of fresh produce, pantry staples, and household essentials.</p>
+                    <a href="#" class="btn btn-primary">Shop Now</a>
+                </div>
+                <div class="col-md-6">
+                    <img src="img/Gemini_Generated_Image_yixmfuyixmfuyixm.jpg" alt="Hero Image" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="product-section">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <a href="products_details.html" <a href="products_details.html"><img src="img/Variety_Gala-transparent-1024x1024.webp" alt="Product 1"></a></a>
+                        <div class="p-3">
+                            <h5>Product 1</h5>
+                            <p>Description of Product 1.</p>
+                            <p>Price: $10</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_tzoxcktzoxcktzox.jpg" alt="Product 2">
+                        <div class="p-3">
+                            <h5>Product 2</h5>
+                            <p>Description of Product 2.</p>
+                            <p>Price: 25.14 CENTS</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/istockphoto-1406047398-1024x1024.jpg" alt="Product 3">
+                        <div class="p-3">
+                            <h5>Product 3</h5>
+                            <p>Description of Product 3.</p>
+                            <p>Price: $20</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_4uswi44uswi44usw.jpg" alt="Product 4">
+                        <div class="p-3">
+                            <h5>Product 4</h5>
+                            <p>Description of Product 4.</p>
+                            <p>Price: $25</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_vs5qn1vs5qn1vs5q.jpg" alt="Product 5">
+                        <div class="p-3">
+                            <h5>Product 5</h5>
+                            <p>Description of Product 5.</p>
+                            <p>Price: $30</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_5d313v5d313v5d31.jpg" alt="Product 6">
+                        <div class="p-3">
+                            <h5>Product 6</h5>
+                            <p>Description of Product 6.</p>
+                            <p>Price: $35</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_708wio708wio708w.jpg" alt="Product 7">
+                        <div class="p-3">
+                            <h5>Product 7</h5>
+                            <p>Description of Product 7.</p>
+                            <p>Price: $40</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/DALL·E 2025-03-03 14.35.04 - A selection of packaged grocery items including pasta, canned beans, rice, and cereal boxes neatly arranged on a kitchen shelf.webp" alt="Product 8">
+                        <div class="p-3">
+                            <h5>Product 8</h5>
+                            <p>Description of Product 8.</p>
+                            <p>Price: $45</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div class="row">
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/Gemini_Generated_Image_gp44ngp44ngp44ng.jpg" alt="Product 9">
+                        <div class="p-3">
+                            <h5>Product 9</h5>
+                            <p>Description of Product 9.</p>
+                            <p>Price: $50</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/DALL·E 2025-03-03 14.45.52 - An assortment of snacks including potato chips, pretzels, popcorn, chocolate bars, and biscuits, neatly arranged on a wooden table.webp" alt="Product 10">
+                        <div class="p-3">
+                            <h5>Product 10</h5>
+                            <p>Description of Product 10.</p>
+                            <p>Price: $55</p>
+                        </div>
+                    </div>
+                </div>
+                 <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/DALL·E 2025-03-03 14.38.58 - A burlap sack filled with white rice, spilling onto a wooden surface, with a wooden scoop beside it.webp" alt="Product 11">
+                        <div class="p-3">
+                            <h5>Product 11</h5>
+                            <p>Description of Product 11.</p>
+                            <p>Price: $60</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="product-card">
+                        <img src="img/DALLE2~1.WEB" alt="Product 12">
+                        <div class="p-3">
+                            <h5>Product 12</h5>
+                            <p>Description of Product 12.</p>
+                            <p>Price: $65</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-links">
+            <a href="/about">About</a>
+            <a href="/contact">Contact</a>
+            <a href="/privacy">Privacy Policy</a>
+            <a href="/terms">Terms of Service</a>
+            <a href="/faq">FAQ</a>
+            <a href="/blog">Blog</a>
+        </div>
+            <div class="copyright">
+                &copy; 2024 My Website
+            </div>
+    </div>
+</footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

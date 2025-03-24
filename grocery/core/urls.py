@@ -1,6 +1,11 @@
 from django.urls import path
 from . import views
 
+#------ To incude Media file ---------------
+from django.conf import settings
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('',views.index,name='index'),
     path("products/",views.products,name='products'),
@@ -8,4 +13,5 @@ urlpatterns = [
     path("contact/",views.contact,name="contact"),
     path("product_details/",views.product_details,name="product_details"),
     path("cart/",views.cart,name="cart"),
+    path("view_cart/",views.view_cart,name="view_cart"),
 ]

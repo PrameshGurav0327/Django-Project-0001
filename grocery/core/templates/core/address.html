@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Your Addresses</h2>
+{% for address in addresses %}
+    <div>
+        <p>{{ address.street }}, {{ address.city }}, {{ address.state }} - {{ address.zip_code }}</p>
+        <a href="{% url 'deleteaddress' address.id %}">Delete</a>
+    </div>
+{% endfor %}
+<a href="{% url 'addaddress' %}">Add New Address</a>
+{% endblock %}

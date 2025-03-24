@@ -1,4 +1,5 @@
-from django.shortcuts import render
+from django.shortcuts import render,redirect,get_object_or_404
+from django.views import View
 
 # Create your views here.
 
@@ -19,3 +20,7 @@ def product_details(request):
 
 def cart(request):
     return render(request,'core/cart.html')
+
+def view_cart(request):
+    return render(request,'core/view_cart.html')
+

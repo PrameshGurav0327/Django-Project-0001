@@ -1,16 +1,5 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Checkout</h2>
-<form method="post">
-    {% csrf_token %}
-    <h3>Select Address</h3>
-    {% for address in addresses %}
-        <div>
-            <input type="radio" name="address" value="{{ address.id }}" {% if forloop.first %}checked{% endif %}>
-            {{ address.street }}, {{ address.city }}, {{ address.state }} - {{ address.zip_code }}
-        </div>
-    {% endfor %}
-    <button type="submit">Continue to Payment</button>
-</form>
+
 {% endblock %}

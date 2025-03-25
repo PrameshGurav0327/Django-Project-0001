@@ -16,11 +16,24 @@ def contact(request):
     return render(request,'core/contact.html')
 
 def product_details(request):
-    return render(request,'core/product_details.html')
+    return render(request,'../templates/core/product_details.html')
 
 def cart(request):
     return render(request,'core/cart.html')
 
 def view_cart(request):
     return render(request,'core/view_cart.html')
+
+def foodcategories(request):
+    return render(request,"core/foodcategories.html")
+
+def fruitscategories(request):
+    return render(request,"core/fruitscategories.html")
+
+def kitchencategories(request):
+    return render(request,"core/kitchencategories.html")
+
+def instantfoodcategories(request):
+    return render(request,"core/instantfoodcategories.html")
+
 

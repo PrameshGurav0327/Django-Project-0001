@@ -1,11 +1,5 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Add Address</h2>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Save Address</button>
-</form>
-<a href="{% url 'address' %}">Back to Addresses</a>
+
 {% endblock %}

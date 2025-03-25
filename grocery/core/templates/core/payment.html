@@ -1,11 +1,5 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h2>Payment</h2>
-<p>Total Amount: ${{ amount }}</p>
-<form method="post">
-    {% csrf_token %}
-    <!-- Payment form fields would go here -->
-    <button type="submit">Pay Now</button>
-</form>
+
 {% endblock %}

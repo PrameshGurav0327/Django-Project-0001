@@ -1,6 +1,6 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-        <a class="navbar-brand" href="index.html">
+        <a class="navbar-brand" href="/">
             <img src="../../static/core/Logo/Grocery_logo.jpg" alt="Logo">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -14,6 +14,16 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{% url "products" %}">Products</a>
                 </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="dropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                      Categories
+                    </a>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="{% url "kitchencategories" %}">Kitchen</a>
+                      <a class="dropdown-item" href="{% url "instantfoodcategories" %}">Instant Food</a>
+                      <a class="dropdown-item" href="{% url "fruitscategories" %}">Fruits</a>
+                    </div>
+                  </li> 
                 <li class="nav-item">
                     <a class="nav-link" href="{% url "about" %}">About</a>
                 </li>

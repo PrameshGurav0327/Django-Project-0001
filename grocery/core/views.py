@@ -1,5 +1,9 @@
 from django.shortcuts import render,redirect,get_object_or_404
-from django.views import View
+from . models import Grocery
+from . forms import RegistrationForm,AuthenticateForm,ChangePasswordForm,UserProfileForm,AdminProfileForm
+from django.contrib.auth import authenticate,login,logout,update_session_auth_hash
+from django.contrib import messages
+from django.contrib.auth.forms import UserCreationForm,AuthenticationForm
 
 # Create your views here.
 
@@ -36,4 +40,7 @@ def kitchencategories(request):
 def instantfoodcategories(request):
     return render(request,"core/instantfoodcategories.html")
 
+def product_details(request,id):
+    GC= Grocery.objects.get(pk=id)
+    return render(request,'core/product_details.html',{'GC':GC})
 

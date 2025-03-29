@@ -11,7 +11,7 @@ urlpatterns = [
     path("products/",views.products,name='products'),
     path("about/",views.about,name='about'),
     path("contact/",views.contact,name="contact"),
-    path("product_details/",views.product_details,name="product_details"),
+    path('product_details/<int:id>/',views.product_details,name='product_details'),
     path("cart/",views.cart,name="cart"),
     path("view_cart/",views.view_cart,name="view_cart"),
     path('foodcategories/',views.foodcategories,name='foodcategories'),
@@ -19,3 +19,6 @@ urlpatterns = [
     path('instantfoodcategories/',views.instantfoodcategories,name='instantfoodcategories'),
     path('fruitscategories/',views.fruitscategories,name='fruitscategories'),
 ]
+
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
